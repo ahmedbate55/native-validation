@@ -85,9 +85,20 @@ const showTheAge = () => {
     showDay.innerHTML = "--";
     return;
   }
+  const today = new Date();
+  let age = year - validYear;
 
-  const calcYear = year - validYear;
-  showAge.innerHTML = calcYear;
+  const currentMonth = today.getMonth() + 1;
+  const currentDay = today.getDate();
+
+  if (
+    currentMonth < validMonth ||
+    (currentMonth === validMonth && currentDay < validDay)
+  ) {
+    age--;
+  }
+
+  showAge.innerHTML = age;
   showYear.innerHTML = validYear;
   showMonth.innerHTML = validMonth;
   showDay.innerHTML = validDay;
