@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #959bbd;
+  background: radial-gradient(
+    circle,
+    rgba(149, 155, 189, 1) 10%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+
+.calc__date {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .calc__date {
+    padding: 2% 4%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .calc__date {
+    padding: 0px 2rem;
+  }
+}
+.carry__both {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 800px;
+  background-color: white;
+  padding: 2% 4%;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .carry__both {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .carry__both {
+    padding: 1rem;
+  }
+}
+
+.square__of__date {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.carry_first_row {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .carry_first_row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .carry_first_row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.carry__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.carry__info input {
+  outline: 0;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+.carry__info input::placeholder {
+  color: gray;
+}
+
+.get__info {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .get__info {
+    display: flex;
+  }
+}
+
+.get__info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.divider {
+  flex-grow: 1;
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 0;
+}
+
+.show__result {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.show__result:hover {
+  background-color: green;
+}
+
+@media screen and (max-width: 767px) {
+  .the__border {
+    display: none;
+  }
+}
+
+.contet {
+  text-align: center;
+  font-size: 18px;
+}
+.carry_the__result {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 4%;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

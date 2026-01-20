@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="calc__date">
+      <div class="carry__both">
+        <form class="square__of__date">
+          <div class="carry_first_row">
+            <div class="carry__info">
+              <label class="header__contet">DAY</label>
+              <input
+                type="number"
+                name=""
+                data-type="day"
+                class="get__date__value"
+                placeholder="DD"
+              />
+              <span class="show__error__of__day"></span>
+            </div>
+            <div class="carry__info">
+              <label class="header__contet">Month </label>
+              <input
+                type="number"
+                name=""
+                data-type="Month"
+                class="get__date__value"
+                placeholder="MM"
+              />
+              <span class="show__error__of__month"></span>
+            </div>
+            <div class="carry__info">
+              <label class="header__contet">Year</label>
+              <input
+                type="number"
+                name=""
+                data-type="Year"
+                class="get__date__value"
+                placeholder="YYYY"
+              />
+              <span class="show__error__of__year"></span>
+            </div>
+          </div>
+          <div class="carry_second_row">
+            <div class="get__info">
+              <hr class="divider" />
+              <button class="show__result">Calculate</button>
+              <hr class="divider" />
+            </div>
+          </div>
+        </form>
+        <div class="carry_the__result">
+          <div class="information">
+            <p class="contet">
+              year :
+              <span data-name="show__year" class="show_year__info"></span>
+            </p>
+            <p class="contet">
+              month :
+              <span data-name="show__month" class="show_year__info"></span>
+            </p>
+            <p class="contet">
+              day : <span data-name="show__day" class="show_year__info"></span>
+            </p>
+          </div>
+          <p class="contet">you have <span class="show__age">--</span> years</p>
+        </div>
+      </div>
+    </div>
+    <script src="./scriptes/script.js"></script>
+  </body>
+</html>
